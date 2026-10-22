@@ -5,13 +5,15 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <Experience />
-        <Education />
-      </main>
-      <Footer />
+    <div className="min-h-screen bg-slate-950 text-slate-100 py-10 px-4 sm:px-6 antialiased selection:bg-blue-500 selection:text-white">
+      <div className="max-w-3xl mx-auto">
+        <Header />
+        <main>
+          <Experience />
+          <Education />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

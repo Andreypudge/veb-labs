@@ -3,36 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Резюме</title>
+  <title>Резюме | Андрій</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+    .status-badge {
+      display: inline-block;
+      background-color: rgba(0, 122, 255, 0.15);
+      color: var(--accent-color, #007aff);
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Андрій</h1>
-  <p>Cybersecurity</p>
-  <p>
-    <a href="https://github.com/Andreypudge">Мій GitHub</a>
-  </p>
-</header>
+  <header id="main-header" style="border-top: 4px solid var(--accent-color, #007aff);">
+    <h1>Андрій</h1>
+    <p class="role">Cybersecurity</p>
+    <span class="status-badge">Шукаю стажування</span>
+    <p class="link-wrapper">
+      <a href="https://github.com/Andreypudge" target="_blank">Мій GitHub</a>
+    </p>
+  </header>
 
-<main>
-  <section>
-    <h2>Досвід</h2>
-    <ul>
-      <li>Розробка простих скриптів на Python</li>
-      <li>Робота з операційними системами родини Linux</li>
-    </ul>
-  </section>
+  <main class="cards-container">
+    <section class="card">
+      <h2>Досвід</h2>
+      <ul>
+        <li>Розробка простих скриптів на Python</li>
+        <li>Робота з операційними системами родини Linux</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Освіта</h2>
-    <p>Національний університет «Львівська політехніка» - Кібербезпека - 2 курс</p>
-  </section>
-</main>
+    <section class="card">
+      <h2>Освіта</h2>
+      <p class="education-title">Національний університет «Львівська політехніка»</p>
+      <p class="education-sub">Кібербезпека — 2 курс</p>
+    </section>
+  </main>
 
-<footer>
-  <p>&copy; 2026 Андрій</p>
-</footer>
+  <footer>
+    <p>&copy; 2026 Андрій</p>
+  </footer>
 
 </body>
 </html>
